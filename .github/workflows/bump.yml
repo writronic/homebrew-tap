@@ -1,0 +1,33 @@
+name: Bump casks
+
+on:
+  schedule:
+    - cron: "17 6 * * 1"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: bump
+  cancel-in-progress: false
+
+jobs:
+  bump:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Update casks from their appcasts
+        run: python3 .github/scripts/bump_casks.py
+
+      - name: Commit and push
+        run: |
+          if git diff --quiet; then
+            echo "Nothing to update."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git commit -am "$(git diff --name-only | sed 's|Casks/||; s|\.rb$||' | paste -sd ' ' -): update to latest release"
+          git push
