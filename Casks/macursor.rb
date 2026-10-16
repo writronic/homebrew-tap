@@ -1,6 +1,6 @@
 cask "macursor" do
   version "2.7.0"
-  sha256 "423ddec62c1c35cfcbe9f0e87af6ddf53ea3e3b21b6526a821d5fa9f27a7a0dc"
+  sha256 "98ece2bf0c13ac6fb80935872a8ef0435754c6c29753bf1cc7193a63ba1aff36"
 
   url "https://github.com/writronic/MaCursor/releases/download/v#{version}/MaCursor.dmg"
   name "MaCursor"
