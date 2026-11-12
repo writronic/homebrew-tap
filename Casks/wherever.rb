@@ -1,8 +1,8 @@
 cask "wherever" do
-  version "0.1.0"
-  sha256 "c42e8e1a8bae785578d40f141026f9fbd045e75b7e839c2d0d114065e1ec03d3"
+  version "0.0.0"
+  sha256 "0000000000000000000000000000000000000000000000000000000000000000"
 
-  url "https://github.com/writronic/Wherever/releases/download/v#{version}/Wherever-#{version}.dmg"
+  url "https://github.com/writronic/Wherever/releases/download/v#{version}/Wherever.dmg"
   name "Wherever"
   desc "Finds any file on the Mac instantly"
   homepage "https://github.com/writronic/Wherever"
