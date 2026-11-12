@@ -1,6 +1,6 @@
 cask "wherever" do
-  version "0.0.0"
-  sha256 "0000000000000000000000000000000000000000000000000000000000000000"
+  version "0.1.0"
+  sha256 "131c361cdc87c63181fe75f3c89b4b602e2ebae98042bd497a5e3a0a18eff1fe"
 
   url "https://github.com/writronic/Wherever/releases/download/v#{version}/Wherever.dmg"
   name "Wherever"
