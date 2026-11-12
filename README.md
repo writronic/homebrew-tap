@@ -10,6 +10,12 @@ Install MaCursor with one command:
 brew install --cask writronic/tap/macursor
 ```
 
+Install Wherever with one command:
+
+```bash
+brew install --cask writronic/tap/wherever
+```
+
 Or tap the repository first, then use the short name:
 
 ```bash
